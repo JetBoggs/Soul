@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 14173 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 31849 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.42f1\Editor\Unity.exe
 -name
 AssetImportWorker1
 -projectPath
-C:/Users/jetbo/OneDrive/Documents/Soul/Game
+C:/Users/Kaiem/Documents/GitHub/Soul/Game
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-49942
+52692
 -job-worker-count
 7
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/jetbo/OneDrive/Documents/Soul/Game
-C:/Users/jetbo/OneDrive/Documents/Soul/Game
+Successfully changed project path to: C:/Users/Kaiem/Documents/GitHub/Soul/Game
+C:/Users/Kaiem/Documents/GitHub/Soul/Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,20 +59,12 @@ C:/Users/jetbo/OneDrive/Documents/Soul/Game
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3116]  Target information:
+Player connection [33844]  Target information:
 
-Player connection [3116]  * "[IP] 172.20.160.1 [Port] 0 [Flags] 2 [Guid] 2473774152 [EditorId] 2473774152 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [33844]  * "[IP] 192.168.0.181 [Port] 0 [Flags] 2 [Guid] 2648192516 [EditorId] 2648192516 [Version] 1048832 [Id] WindowsEditor(7,RIG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [3116]  * "[IP] 192.168.153.1 [Port] 0 [Flags] 2 [Guid] 2473774152 [EditorId] 2473774152 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [3116]  * "[IP] 192.168.25.1 [Port] 0 [Flags] 2 [Guid] 2473774152 [EditorId] 2473774152 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [3116]  * "[IP] 10.5.0.2 [Port] 0 [Flags] 2 [Guid] 2473774152 [EditorId] 2473774152 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [3116]  * "[IP] 172.22.87.183 [Port] 0 [Flags] 2 [Guid] 2473774152 [EditorId] 2473774152 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [3116] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [3116] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33844] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [33844] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,964 +76,307 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 9.25 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.15 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/jetbo/OneDrive/Documents/Soul/Game/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Kaiem/Documents/GitHub/Soul/Game/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon (TM) Graphics (ID=0x15e7)
-    Vendor:   ATI
-    VRAM:     7086 MB
-    Driver:   31.0.21921.1000
+    Renderer: NVIDIA GeForce RTX 4070 Ti SUPER (ID=0x2705)
+    Vendor:   NVIDIA
+    VRAM:     16063 MB
+    Driver:   32.0.15.7270
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56280
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.012990 seconds.
-- Loaded All Assemblies, in  1.010 seconds
+Registered in 0.002805 seconds.
+- Loaded All Assemblies, in  0.270 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.835 seconds
-Domain Reload Profiling: 1838ms
-	BeginReloadAssembly (367ms)
+- Finished resetting the current domain, in  0.243 seconds
+Domain Reload Profiling: 511ms
+	BeginReloadAssembly (103ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (85ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (136ms)
-	LoadAllAssembliesAndSetupDomain (386ms)
-		LoadAssemblies (359ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (97ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (379ms)
-			TypeCache.Refresh (376ms)
-				TypeCache.ScanAssembly (349ms)
+		AnalyzeDomain (95ms)
+			TypeCache.Refresh (93ms)
+				TypeCache.ScanAssembly (85ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (837ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (243ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (729ms)
+		SetupLoadedEditorAssemblies (213ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (50ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (394ms)
-			ProcessInitializeOnLoadMethodAttributes (141ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (117ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.208 seconds
-Refreshing native plugins compatible for Editor in 7.99 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.613 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.27 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.061 seconds
-Domain Reload Profiling: 4251ms
-	BeginReloadAssembly (436ms)
+- Finished resetting the current domain, in  0.588 seconds
+Domain Reload Profiling: 1197ms
+	BeginReloadAssembly (134ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (4ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (117ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (114ms)
-	LoadAllAssembliesAndSetupDomain (1497ms)
-		LoadAssemblies (1046ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (31ms)
+	LoadAllAssembliesAndSetupDomain (411ms)
+		LoadAssemblies (302ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (714ms)
-			TypeCache.Refresh (509ms)
-				TypeCache.ScanAssembly (469ms)
-			BuildScriptInfoCaches (165ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2063ms)
+		AnalyzeDomain (190ms)
+			TypeCache.Refresh (135ms)
+				TypeCache.ScanAssembly (124ms)
+			BuildScriptInfoCaches (43ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (588ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1693ms)
+		SetupLoadedEditorAssemblies (466ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (335ms)
-			ProcessInitializeOnLoadAttributes (1008ms)
-			ProcessInitializeOnLoadMethodAttributes (305ms)
-			AfterProcessingInitializeOnLoad (17ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (277ms)
+			ProcessInitializeOnLoadMethodAttributes (84ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (14ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 6.03 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 2.08 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 206 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6569 unused Assets / (7.4 MB). Loaded Objects now: 7213.
-Memory consumption went from 170.4 MB to 163.0 MB.
-Total: 24.513800 ms (FindLiveObjects: 1.856600 ms CreateObjectMapping: 1.768900 ms MarkObjects: 12.917300 ms  DeleteObjects: 7.969000 ms)
+Unloading 208 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6965 unused Assets / (7.3 MB). Loaded Objects now: 7609.
+Memory consumption went from 174.7 MB to 167.4 MB.
+Total: 11.664100 ms (FindLiveObjects: 1.056500 ms CreateObjectMapping: 0.785400 ms MarkObjects: 5.946600 ms  DeleteObjects: 3.874800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 688437.647863 seconds.
-  path: Assets/UniversalRenderPipelineGlobalSettings.asset
-  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00c025d2039ced57596f58dea75cb28a') in 0.075376 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 75589.059257 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_r_02.png
+  artifactKey: Guid(e1cf0148d2f367e42966b7ce6ee32e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_r_02.png using Guid(e1cf0148d2f367e42966b7ce6ee32e73) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1476dcd391c8ca2de6a184ad4ec451d8') in 0.1155068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/DefaultVolumeProfile.asset
-  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.0075358 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_l_04.png
+  artifactKey: Guid(7b9383d96cedcd9409cc1f3d6d355cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_l_04.png using Guid(7b9383d96cedcd9409cc1f3d6d355cf6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a5d3fabe273326642965e4f20baf26f8') in 0.0129219 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.59 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6557 unused Assets / (7.1 MB). Loaded Objects now: 7217.
-Memory consumption went from 144.3 MB to 137.2 MB.
-Total: 173.228500 ms (FindLiveObjects: 2.574900 ms CreateObjectMapping: 2.712800 ms MarkObjects: 155.877600 ms  DeleteObjects: 12.060500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.239 seconds
-Refreshing native plugins compatible for Editor in 5.65 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.972 seconds
-Domain Reload Profiling: 4202ms
-	BeginReloadAssembly (704ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (61ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (205ms)
-	RebuildCommonClasses (100ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (1303ms)
-		LoadAssemblies (1120ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (500ms)
-			TypeCache.Refresh (27ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (435ms)
-			ResolveRequiredComponents (27ms)
-	FinalizeReload (1973ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1465ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (343ms)
-			ProcessInitializeOnLoadAttributes (923ms)
-			ProcessInitializeOnLoadMethodAttributes (165ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (31ms)
-Refreshing native plugins compatible for Editor in 6.10 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6568 unused Assets / (7.5 MB). Loaded Objects now: 7220.
-Memory consumption went from 147.5 MB to 140.1 MB.
-Total: 21.156900 ms (FindLiveObjects: 1.096000 ms CreateObjectMapping: 1.345100 ms MarkObjects: 11.439700 ms  DeleteObjects: 7.273700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2970.093402 seconds.
-  path: Assets/PlayerController.cs
-  artifactKey: Guid(b703780b2a881144d92bd63e5960d236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerController.cs using Guid(b703780b2a881144d92bd63e5960d236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a32930d7530303f73644b111012da9da') in 0.0050569 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000044 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_02.png
+  artifactKey: Guid(a471110b5fe3bcc4caff7ad9ff13d244) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_02.png using Guid(a471110b5fe3bcc4caff7ad9ff13d244) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5956790bfa16d37373ba3dce82271708') in 0.0114183 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.122 seconds
-Refreshing native plugins compatible for Editor in 6.64 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.134 seconds
-Domain Reload Profiling: 4239ms
-	BeginReloadAssembly (548ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (40ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (121ms)
-	RebuildCommonClasses (95ms)
-	RebuildNativeTypeToScriptingClass (38ms)
-	initialDomainReloadingComplete (87ms)
-	LoadAllAssembliesAndSetupDomain (1335ms)
-		LoadAssemblies (1035ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (584ms)
-			TypeCache.Refresh (21ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (517ms)
-			ResolveRequiredComponents (35ms)
-	FinalizeReload (2135ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1620ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (359ms)
-			ProcessInitializeOnLoadAttributes (1024ms)
-			ProcessInitializeOnLoadMethodAttributes (187ms)
-			AfterProcessingInitializeOnLoad (28ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (41ms)
-Refreshing native plugins compatible for Editor in 8.60 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6568 unused Assets / (6.9 MB). Loaded Objects now: 7222.
-Memory consumption went from 149.4 MB to 142.5 MB.
-Total: 24.719100 ms (FindLiveObjects: 2.329100 ms CreateObjectMapping: 2.399700 ms MarkObjects: 11.606300 ms  DeleteObjects: 8.381800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 114.563765 seconds.
-  path: Assets/PlayerController.cs
-  artifactKey: Guid(b703780b2a881144d92bd63e5960d236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerController.cs using Guid(b703780b2a881144d92bd63e5960d236) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4981b2d046fba376a41c3c2bac4682b') in 0.0036466 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_06.png
+  artifactKey: Guid(a366da325a505654e94ff671e63cde89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_06.png using Guid(a366da325a505654e94ff671e63cde89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '765e685e40857a2cf31b8d0d04ebbb91') in 0.0110646 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.33 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6558 unused Assets / (8.4 MB). Loaded Objects now: 7223.
-Memory consumption went from 149.6 MB to 141.2 MB.
-Total: 22.010500 ms (FindLiveObjects: 1.152500 ms CreateObjectMapping: 0.862400 ms MarkObjects: 11.442500 ms  DeleteObjects: 8.550200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.797 seconds
-Refreshing native plugins compatible for Editor in 4.97 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.065 seconds
-Domain Reload Profiling: 3856ms
-	BeginReloadAssembly (476ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (38ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (109ms)
-	RebuildCommonClasses (92ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (1120ms)
-		LoadAssemblies (868ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (488ms)
-			TypeCache.Refresh (16ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (433ms)
-			ResolveRequiredComponents (33ms)
-	FinalizeReload (2067ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1568ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (362ms)
-			ProcessInitializeOnLoadAttributes (982ms)
-			ProcessInitializeOnLoadMethodAttributes (182ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (33ms)
-Refreshing native plugins compatible for Editor in 7.25 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6569 unused Assets / (7.2 MB). Loaded Objects now: 7225.
-Memory consumption went from 149.5 MB to 142.3 MB.
-Total: 20.810900 ms (FindLiveObjects: 1.181500 ms CreateObjectMapping: 1.522000 ms MarkObjects: 10.495800 ms  DeleteObjects: 7.609800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 264.084892 seconds.
-  path: Assets/PlaneSwitcher.cs
-  artifactKey: Guid(4b066b9eea44d7e47bb9abe06421becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlaneSwitcher.cs using Guid(4b066b9eea44d7e47bb9abe06421becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '40cb337d09efacaf9602f9939c956b05') in 0.004013 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_01.png
+  artifactKey: Guid(aa3c97470a4d5234ea50591a35ff9616) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_01.png using Guid(aa3c97470a4d5234ea50591a35ff9616) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e605e105cb3095c348547e314af2841c') in 0.0107727 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.863 seconds
-Refreshing native plugins compatible for Editor in 5.46 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.889 seconds
-Domain Reload Profiling: 3736ms
-	BeginReloadAssembly (490ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (37ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (104ms)
-	RebuildCommonClasses (75ms)
-	RebuildNativeTypeToScriptingClass (23ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (1187ms)
-		LoadAssemblies (931ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (514ms)
-			TypeCache.Refresh (19ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (459ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (1890ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1378ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (335ms)
-			ProcessInitializeOnLoadAttributes (851ms)
-			ProcessInitializeOnLoadMethodAttributes (158ms)
-			AfterProcessingInitializeOnLoad (19ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (36ms)
-Refreshing native plugins compatible for Editor in 7.05 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6569 unused Assets / (7.8 MB). Loaded Objects now: 7227.
-Memory consumption went from 149.5 MB to 141.6 MB.
-Total: 24.893000 ms (FindLiveObjects: 2.213000 ms CreateObjectMapping: 3.534700 ms MarkObjects: 10.654900 ms  DeleteObjects: 8.488200 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 20.154876 seconds.
-  path: Assets/PlaneSwitcher.cs
-  artifactKey: Guid(4b066b9eea44d7e47bb9abe06421becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlaneSwitcher.cs using Guid(4b066b9eea44d7e47bb9abe06421becd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '75bf0e93fd30fdda48f37ce60ca56650') in 0.0034133 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_006.png
+  artifactKey: Guid(5d7ff4b982784f843b12c8448e652a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_006.png using Guid(5d7ff4b982784f843b12c8448e652a36) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2291bc2d2c28c7fb4ddf645ddbc8e58d') in 0.0105403 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.29 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6559 unused Assets / (8.5 MB). Loaded Objects now: 7228.
-Memory consumption went from 149.6 MB to 141.2 MB.
-Total: 29.398400 ms (FindLiveObjects: 1.295600 ms CreateObjectMapping: 0.942700 ms MarkObjects: 14.965000 ms  DeleteObjects: 12.192800 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.013 seconds
-Refreshing native plugins compatible for Editor in 7.59 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.138 seconds
-Domain Reload Profiling: 4138ms
-	BeginReloadAssembly (536ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (40ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (113ms)
-	RebuildCommonClasses (99ms)
-	RebuildNativeTypeToScriptingClass (30ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (1250ms)
-		LoadAssemblies (990ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (537ms)
-			TypeCache.Refresh (23ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (475ms)
-			ResolveRequiredComponents (29ms)
-	FinalizeReload (2139ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1611ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (355ms)
-			ProcessInitializeOnLoadAttributes (1016ms)
-			ProcessInitializeOnLoadMethodAttributes (199ms)
-			AfterProcessingInitializeOnLoad (24ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 6.38 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.3 MB). Loaded Objects now: 7230.
-Memory consumption went from 149.4 MB to 142.2 MB.
-Total: 27.952100 ms (FindLiveObjects: 1.411900 ms CreateObjectMapping: 2.570500 ms MarkObjects: 15.482900 ms  DeleteObjects: 8.484400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 157.501822 seconds.
-  path: Assets/SpiritPlatform.cs
-  artifactKey: Guid(a8738154c317c31449d745d40cb736b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/SpiritPlatform.cs using Guid(a8738154c317c31449d745d40cb736b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '923cf4f2ee02b0c99678feaf3067a8fa') in 0.0036052 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_l_02.png
+  artifactKey: Guid(925993f8892fa474c904d0e9a8f67cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_l_02.png using Guid(925993f8892fa474c904d0e9a8f67cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '41c9dafb4d6afeccb69e170f4c8e659e') in 0.010506 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.843 seconds
-Refreshing native plugins compatible for Editor in 6.93 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.845 seconds
-Domain Reload Profiling: 3677ms
-	BeginReloadAssembly (488ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (32ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (107ms)
-	RebuildCommonClasses (86ms)
-	RebuildNativeTypeToScriptingClass (29ms)
-	initialDomainReloadingComplete (79ms)
-	LoadAllAssembliesAndSetupDomain (1149ms)
-		LoadAssemblies (958ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (440ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (386ms)
-			ResolveRequiredComponents (29ms)
-	FinalizeReload (1846ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1398ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (301ms)
-			ProcessInitializeOnLoadAttributes (904ms)
-			ProcessInitializeOnLoadMethodAttributes (153ms)
-			AfterProcessingInitializeOnLoad (24ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 6.70 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (8.3 MB). Loaded Objects now: 7232.
-Memory consumption went from 149.5 MB to 141.2 MB.
-Total: 24.663900 ms (FindLiveObjects: 1.536600 ms CreateObjectMapping: 1.112100 ms MarkObjects: 12.410600 ms  DeleteObjects: 9.601700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 6.11 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6560 unused Assets / (7.8 MB). Loaded Objects now: 7233.
-Memory consumption went from 149.6 MB to 141.8 MB.
-Total: 26.168000 ms (FindLiveObjects: 1.321400 ms CreateObjectMapping: 3.150100 ms MarkObjects: 14.039500 ms  DeleteObjects: 7.655000 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  2.168 seconds
-Refreshing native plugins compatible for Editor in 6.67 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.252 seconds
-Domain Reload Profiling: 4409ms
-	BeginReloadAssembly (560ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (43ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (112ms)
-	RebuildCommonClasses (104ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (128ms)
-	LoadAllAssembliesAndSetupDomain (1330ms)
-		LoadAssemblies (1075ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (553ms)
-			TypeCache.Refresh (19ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (493ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (2254ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1678ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (10ms)
-			SetLoadedEditorAssemblies (12ms)
-			BeforeProcessingInitializeOnLoad (397ms)
-			ProcessInitializeOnLoadAttributes (1059ms)
-			ProcessInitializeOnLoadMethodAttributes (180ms)
-			AfterProcessingInitializeOnLoad (19ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (47ms)
-Refreshing native plugins compatible for Editor in 8.36 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6571 unused Assets / (7.2 MB). Loaded Objects now: 7235.
-Memory consumption went from 149.5 MB to 142.3 MB.
-Total: 23.435700 ms (FindLiveObjects: 1.987000 ms CreateObjectMapping: 1.732400 ms MarkObjects: 11.259500 ms  DeleteObjects: 8.454700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 160.305013 seconds.
-  path: Assets/Enemy.cs
-  artifactKey: Guid(a22a5f2fd9e861c4b9271496555cd611) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy.cs using Guid(a22a5f2fd9e861c4b9271496555cd611) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00000000000000000000000000000000') in 0.0039607 seconds
-Import Error Code:(4)
-Message: Build asset version error: assets/enemy.cs in SourceAssetDB has modification time of '2025-03-20T11:38:54.677642Z' while content on disk has modification time of '2025-03-20T11:39:11.838407Z'
-  ERROR: Build asset version error: assets/enemy.cs in SourceAssetDB has modification time of '2025-03-20T11:38:54.677642Z' while content on disk has modification time of '2025-03-20T11:39:11.838407Z'
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_002.png
+  artifactKey: Guid(f57ffb33cc05fcc46b89c050467dcd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_002.png using Guid(f57ffb33cc05fcc46b89c050467dcd7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6657ef8bc344ab6506ab7f68d70f3212') in 0.010963 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.875 seconds
-Refreshing native plugins compatible for Editor in 6.25 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.875 seconds
-Domain Reload Profiling: 3737ms
-	BeginReloadAssembly (493ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (38ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (105ms)
-	RebuildCommonClasses (84ms)
-	RebuildNativeTypeToScriptingClass (26ms)
-	initialDomainReloadingComplete (80ms)
-	LoadAllAssembliesAndSetupDomain (1178ms)
-		LoadAssemblies (915ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (508ms)
-			TypeCache.Refresh (23ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (445ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (1876ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1395ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (10ms)
-			BeforeProcessingInitializeOnLoad (330ms)
-			ProcessInitializeOnLoadAttributes (861ms)
-			ProcessInitializeOnLoadMethodAttributes (170ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 5.16 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6571 unused Assets / (7.3 MB). Loaded Objects now: 7237.
-Memory consumption went from 149.5 MB to 142.2 MB.
-Total: 17.613200 ms (FindLiveObjects: 1.135600 ms CreateObjectMapping: 1.071000 ms MarkObjects: 9.293600 ms  DeleteObjects: 6.111200 ms)
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_06.png
+  artifactKey: Guid(7db7af78e8f9c45418a407bdd7958560) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_06.png using Guid(7db7af78e8f9c45418a407bdd7958560) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a4ff20ea52927534dcd7b10e0418186a') in 0.0101294 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.801 seconds
-Refreshing native plugins compatible for Editor in 6.53 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.055 seconds
-Domain Reload Profiling: 3843ms
-	BeginReloadAssembly (466ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (32ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (117ms)
-	RebuildCommonClasses (91ms)
-	RebuildNativeTypeToScriptingClass (34ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (1122ms)
-		LoadAssemblies (904ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (443ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (400ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2056ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1577ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (351ms)
-			ProcessInitializeOnLoadAttributes (999ms)
-			ProcessInitializeOnLoadMethodAttributes (185ms)
-			AfterProcessingInitializeOnLoad (25ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
-Refreshing native plugins compatible for Editor in 6.27 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6571 unused Assets / (7.2 MB). Loaded Objects now: 7239.
-Memory consumption went from 151.4 MB to 144.3 MB.
-Total: 23.898900 ms (FindLiveObjects: 1.345700 ms CreateObjectMapping: 1.769400 ms MarkObjects: 12.392600 ms  DeleteObjects: 8.389300 ms)
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_04.png
+  artifactKey: Guid(8923765c279ee0241afd55ff5dc53f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_04.png using Guid(8923765c279ee0241afd55ff5dc53f92) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7e3e9d6e151fa9fed3640ec8a0eb9a37') in 0.0107047 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.848 seconds
-Refreshing native plugins compatible for Editor in 4.92 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.123 seconds
-Domain Reload Profiling: 3961ms
-	BeginReloadAssembly (498ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (1ms)
-		CreateAndSetChildDomain (101ms)
-	RebuildCommonClasses (75ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (87ms)
-	LoadAllAssembliesAndSetupDomain (1149ms)
-		LoadAssemblies (960ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (455ms)
-			TypeCache.Refresh (11ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (403ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (2124ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1598ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (376ms)
-			ProcessInitializeOnLoadAttributes (1004ms)
-			ProcessInitializeOnLoadMethodAttributes (179ms)
-			AfterProcessingInitializeOnLoad (21ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
-Refreshing native plugins compatible for Editor in 6.35 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6571 unused Assets / (8.0 MB). Loaded Objects now: 7241.
-Memory consumption went from 151.4 MB to 143.3 MB.
-Total: 25.197800 ms (FindLiveObjects: 1.513300 ms CreateObjectMapping: 2.009900 ms MarkObjects: 11.777300 ms  DeleteObjects: 9.894700 ms)
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hood_04.png
+  artifactKey: Guid(dcb72940063c94f44abc2366768e713a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hood_04.png using Guid(dcb72940063c94f44abc2366768e713a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '70994a70e9fc46bc24592ba758864099') in 0.0104993 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.871 seconds
-Refreshing native plugins compatible for Editor in 6.87 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.072 seconds
-Domain Reload Profiling: 3936ms
-	BeginReloadAssembly (482ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (41ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (102ms)
-	RebuildCommonClasses (85ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (80ms)
-	LoadAllAssembliesAndSetupDomain (1191ms)
-		LoadAssemblies (898ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (534ms)
-			TypeCache.Refresh (14ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (480ms)
-			ResolveRequiredComponents (31ms)
-	FinalizeReload (2074ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1555ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (332ms)
-			ProcessInitializeOnLoadAttributes (1006ms)
-			ProcessInitializeOnLoadMethodAttributes (179ms)
-			AfterProcessingInitializeOnLoad (20ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (41ms)
-Refreshing native plugins compatible for Editor in 7.43 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6571 unused Assets / (7.7 MB). Loaded Objects now: 7243.
-Memory consumption went from 151.4 MB to 143.8 MB.
-Total: 26.479000 ms (FindLiveObjects: 2.097300 ms CreateObjectMapping: 1.944200 ms MarkObjects: 13.095400 ms  DeleteObjects: 9.339900 ms)
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_02.png
+  artifactKey: Guid(57e9977661e6a7246b75c2de487e5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_02.png using Guid(57e9977661e6a7246b75c2de487e5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4dded7405d8b1538229ac3362b1d231') in 0.0100929 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.53 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6559 unused Assets / (7.0 MB). Loaded Objects now: 7242.
-Memory consumption went from 151.6 MB to 144.5 MB.
-Total: 19.928900 ms (FindLiveObjects: 1.078500 ms CreateObjectMapping: 0.908600 ms MarkObjects: 10.776400 ms  DeleteObjects: 7.161300 ms)
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_04.png
+  artifactKey: Guid(7c0d0c89b736eb54cac31e27a02a92e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_04.png using Guid(7c0d0c89b736eb54cac31e27a02a92e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8c52cd5728454ac429ddfa1d6d11e087') in 0.0102745 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.814 seconds
-Refreshing native plugins compatible for Editor in 5.03 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.823 seconds
-Domain Reload Profiling: 3628ms
-	BeginReloadAssembly (453ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (34ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (91ms)
-	RebuildCommonClasses (99ms)
-	RebuildNativeTypeToScriptingClass (36ms)
-	initialDomainReloadingComplete (71ms)
-	LoadAllAssembliesAndSetupDomain (1145ms)
-		LoadAssemblies (928ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (458ms)
-			TypeCache.Refresh (17ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (397ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (1824ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1386ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (357ms)
-			ProcessInitializeOnLoadAttributes (848ms)
-			ProcessInitializeOnLoadMethodAttributes (151ms)
-			AfterProcessingInitializeOnLoad (16ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (32ms)
-Refreshing native plugins compatible for Editor in 5.38 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.5 MB). Loaded Objects now: 7244.
-Memory consumption went from 151.5 MB to 143.9 MB.
-Total: 22.126000 ms (FindLiveObjects: 1.238000 ms CreateObjectMapping: 1.365100 ms MarkObjects: 11.812900 ms  DeleteObjects: 7.707800 ms)
+Received Import Request.
+  Time since last request: 0.000008 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_wrist_l_02.png
+  artifactKey: Guid(342c30774664cc34088bfe173b77c96e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_wrist_l_02.png using Guid(342c30774664cc34088bfe173b77c96e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a671f3eb6c57185ee7566fbaf6f9afc3') in 0.0113068 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.796 seconds
-Refreshing native plugins compatible for Editor in 5.38 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.789 seconds
-Domain Reload Profiling: 3571ms
-	BeginReloadAssembly (466ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (35ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (93ms)
-	RebuildCommonClasses (92ms)
-	RebuildNativeTypeToScriptingClass (28ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (1119ms)
-		LoadAssemblies (928ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (441ms)
-			TypeCache.Refresh (15ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (390ms)
-			ResolveRequiredComponents (26ms)
-	FinalizeReload (1791ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1334ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (304ms)
-			ProcessInitializeOnLoadAttributes (839ms)
-			ProcessInitializeOnLoadMethodAttributes (156ms)
-			AfterProcessingInitializeOnLoad (20ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (28ms)
-Refreshing native plugins compatible for Editor in 5.36 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.4 MB). Loaded Objects now: 7246.
-Memory consumption went from 151.5 MB to 144.1 MB.
-Total: 17.897400 ms (FindLiveObjects: 1.108800 ms CreateObjectMapping: 0.979900 ms MarkObjects: 9.621800 ms  DeleteObjects: 6.184600 ms)
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_06.png
+  artifactKey: Guid(b1babcb6ce4ee78478abc5076a6d1b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_06.png using Guid(b1babcb6ce4ee78478abc5076a6d1b8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4106b7d3919312953f9647dd307ee5cd') in 0.0103113 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.792 seconds
-Refreshing native plugins compatible for Editor in 6.28 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.094 seconds
-Domain Reload Profiling: 3877ms
-	BeginReloadAssembly (484ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (38ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (105ms)
-	RebuildCommonClasses (71ms)
-	RebuildNativeTypeToScriptingClass (24ms)
-	initialDomainReloadingComplete (73ms)
-	LoadAllAssembliesAndSetupDomain (1129ms)
-		LoadAssemblies (914ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (459ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (404ms)
-			ResolveRequiredComponents (34ms)
-	FinalizeReload (2095ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1618ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (357ms)
-			ProcessInitializeOnLoadAttributes (1040ms)
-			ProcessInitializeOnLoadMethodAttributes (179ms)
-			AfterProcessingInitializeOnLoad (22ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 5.87 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.2 MB). Loaded Objects now: 7248.
-Memory consumption went from 151.5 MB to 144.2 MB.
-Total: 23.531500 ms (FindLiveObjects: 1.408900 ms CreateObjectMapping: 1.283300 ms MarkObjects: 12.342200 ms  DeleteObjects: 8.494900 ms)
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hair_01.png
+  artifactKey: Guid(04f6c40e52535b941b42e11550f9cb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hair_01.png using Guid(04f6c40e52535b941b42e11550f9cb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9be61dac67c915c86948e6c8526ff1b2') in 0.0129379 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  1.756 seconds
-Refreshing native plugins compatible for Editor in 5.31 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.160 seconds
-Domain Reload Profiling: 3910ms
-	BeginReloadAssembly (473ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (43ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (103ms)
-	RebuildCommonClasses (88ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (82ms)
-	LoadAllAssembliesAndSetupDomain (1080ms)
-		LoadAssemblies (854ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (455ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (412ms)
-			ResolveRequiredComponents (23ms)
-	FinalizeReload (2162ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1639ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (11ms)
-			BeforeProcessingInitializeOnLoad (381ms)
-			ProcessInitializeOnLoadAttributes (1029ms)
-			ProcessInitializeOnLoadMethodAttributes (189ms)
-			AfterProcessingInitializeOnLoad (19ms)
-			EditorAssembliesLoaded (1ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (38ms)
-Refreshing native plugins compatible for Editor in 6.18 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (8.4 MB). Loaded Objects now: 7250.
-Memory consumption went from 151.4 MB to 143.0 MB.
-Total: 27.904500 ms (FindLiveObjects: 1.325900 ms CreateObjectMapping: 1.679500 ms MarkObjects: 14.188000 ms  DeleteObjects: 10.709400 ms)
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_05.png
+  artifactKey: Guid(82356071de2f4a942b6c0eb7db5dbc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_05.png using Guid(82356071de2f4a942b6c0eb7db5dbc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1d9ba7db5da0245aa0a8a1e7d946c44') in 0.0109607 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_02.png
+  artifactKey: Guid(90458a12b047bb84ba77cb7ea81ba457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_02.png using Guid(90458a12b047bb84ba77cb7ea81ba457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29d32a90033325f79bdcef63cfaea0a9') in 0.0115994 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_06.png
+  artifactKey: Guid(b2bfd98da49248e42b93a78607ac257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_06.png using Guid(b2bfd98da49248e42b93a78607ac257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f324bfe2fca8b92e17616a2d14916bdf') in 0.0122163 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_05.png
+  artifactKey: Guid(f5e38fc0746afdb408f3af29c6c737cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_05.png using Guid(f5e38fc0746afdb408f3af29c6c737cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '245560a865978cda0bd1c29a03a8b48d') in 0.0110828 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_03.png
+  artifactKey: Guid(124013dbba7f284489ac16156c930131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_03.png using Guid(124013dbba7f284489ac16156c930131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12de7018458aafdedaa3b65376ab07b2') in 0.0121468 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_04.png
+  artifactKey: Guid(6ebc4c8acffeeca41934c2f2393a45be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_04.png using Guid(6ebc4c8acffeeca41934c2f2393a45be) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c136be0209c94e327fed320096eafa58') in 0.0126761 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_01.png
+  artifactKey: Guid(f8d916881a19b7a4a99ec74753414a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Weapons/Rogue_weapon_01.png using Guid(f8d916881a19b7a4a99ec74753414a40) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a1c0a6e322ea554b4768ca3e0cea4a2b') in 0.013039 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+

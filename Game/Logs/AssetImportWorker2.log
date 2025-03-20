@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '6000.0/staging' branch; Version is '6000.0.42f1 (feb9a7235030) revision 16693671'; Using compiler version '193933523'; Build Type 'Release'
-OS: 'Windows 11  (10.0.26100) 64bit Professional' Language: 'en' Physical Memory: 14173 MB
+OS: 'Windows 11  (10.0.26100) 64bit Core' Language: 'en' Physical Memory: 31849 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -11,19 +11,19 @@ C:\Program Files\Unity\Hub\Editor\6000.0.42f1\Editor\Unity.exe
 -name
 AssetImportWorker2
 -projectPath
-C:/Users/jetbo/OneDrive/Documents/Soul/Game
+C:/Users/Kaiem/Documents/GitHub/Soul/Game
 -logFile
 Logs/AssetImportWorker2.log
 -srvPort
-55296
+53130
 -job-worker-count
 7
 -background-job-worker-count
 8
 -gc-helper-count
 1
-Successfully changed project path to: C:/Users/jetbo/OneDrive/Documents/Soul/Game
-C:/Users/jetbo/OneDrive/Documents/Soul/Game
+Successfully changed project path to: C:/Users/Kaiem/Documents/GitHub/Soul/Game
+C:/Users/Kaiem/Documents/GitHub/Soul/Game
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -59,20 +59,12 @@ C:/Users/jetbo/OneDrive/Documents/Soul/Game
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [16312]  Target information:
+Player connection [37456]  Target information:
 
-Player connection [16312]  * "[IP] 172.20.160.1 [Port] 0 [Flags] 2 [Guid] 3557708255 [EditorId] 3557708255 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37456]  * "[IP] 192.168.0.181 [Port] 0 [Flags] 2 [Guid] 4054092737 [EditorId] 4054092737 [Version] 1048832 [Id] WindowsEditor(7,RIG) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [16312]  * "[IP] 192.168.153.1 [Port] 0 [Flags] 2 [Guid] 3557708255 [EditorId] 3557708255 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [16312]  * "[IP] 192.168.25.1 [Port] 0 [Flags] 2 [Guid] 3557708255 [EditorId] 3557708255 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [16312]  * "[IP] 10.5.0.2 [Port] 0 [Flags] 2 [Guid] 3557708255 [EditorId] 3557708255 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [16312]  * "[IP] 172.20.10.10 [Port] 0 [Flags] 2 [Guid] 3557708255 [EditorId] 3557708255 [Version] 1048832 [Id] WindowsEditor(7,Kreuztop) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
-
-Player connection [16312] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [16312] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37456] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [37456] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -84,246 +76,521 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 4.78 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 2.21 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.42f1 (feb9a7235030)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/jetbo/OneDrive/Documents/Soul/Game/Assets
+[Subsystems] Discovering subsystems at path C:/Users/Kaiem/Documents/GitHub/Soul/Game/Assets
 GfxDevice: creating device client; kGfxThreadingModeNonThreaded
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: AMD Radeon (TM) Graphics (ID=0x15e7)
-    Vendor:   ATI
-    VRAM:     7086 MB
-    Driver:   31.0.21921.1000
+    Renderer: NVIDIA GeForce RTX 4070 Ti SUPER (ID=0x2705)
+    Vendor:   NVIDIA
+    VRAM:     16063 MB
+    Driver:   32.0.15.7270
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56532
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56640
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.42f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.005568 seconds.
-- Loaded All Assemblies, in  0.529 seconds
+Registered in 0.003414 seconds.
+- Loaded All Assemblies, in  0.300 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.347 seconds
-Domain Reload Profiling: 873ms
-	BeginReloadAssembly (228ms)
+- Finished resetting the current domain, in  0.261 seconds
+Domain Reload Profiling: 559ms
+	BeginReloadAssembly (113ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (69ms)
-	LoadAllAssembliesAndSetupDomain (176ms)
-		LoadAssemblies (223ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (106ms)
+		LoadAssemblies (112ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (172ms)
-			TypeCache.Refresh (169ms)
-				TypeCache.ScanAssembly (153ms)
+		AnalyzeDomain (104ms)
+			TypeCache.Refresh (103ms)
+				TypeCache.ScanAssembly (94ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (347ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (261ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (298ms)
+		SetupLoadedEditorAssemblies (224ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (24ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (56ms)
-			ProcessInitializeOnLoadAttributes (160ms)
-			ProcessInitializeOnLoadMethodAttributes (53ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (43ms)
+			ProcessInitializeOnLoadAttributes (123ms)
+			ProcessInitializeOnLoadMethodAttributes (39ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.861 seconds
-Refreshing native plugins compatible for Editor in 1.92 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.663 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.89 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Package Manager log level set to [2]
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.796 seconds
-Domain Reload Profiling: 1651ms
-	BeginReloadAssembly (172ms)
+- Finished resetting the current domain, in  0.604 seconds
+Domain Reload Profiling: 1261ms
+	BeginReloadAssembly (145ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (36ms)
+	LoadAllAssembliesAndSetupDomain (435ms)
+		LoadAssemblies (321ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (203ms)
+			TypeCache.Refresh (142ms)
+				TypeCache.ScanAssembly (129ms)
+			BuildScriptInfoCaches (49ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (605ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (495ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (304ms)
+			ProcessInitializeOnLoadMethodAttributes (79ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (4ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Refreshing native plugins compatible for Editor in 4.14 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 208 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6938 unused Assets / (6.6 MB). Loaded Objects now: 7636.
+Memory consumption went from 174.0 MB to 167.4 MB.
+Total: 19.219000 ms (FindLiveObjects: 1.775800 ms CreateObjectMapping: 2.549800 ms MarkObjects: 9.526900 ms  DeleteObjects: 5.366000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 76064.136308 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_04.png
+  artifactKey: Guid(4807dc8cba98f89409729f6aac2945a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_04.png using Guid(4807dc8cba98f89409729f6aac2945a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0f1ec0e3ff5e8dcecb9c979d5bf07792') in 0.2212132 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_r_06.png
+  artifactKey: Guid(ab59709aadb3a224294b3c3b5c47cc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_r_06.png using Guid(ab59709aadb3a224294b3c3b5c47cc79) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f0417d39dde21d3aa04ac2fc97861fe8') in 0.010639 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_03.png
+  artifactKey: Guid(0c6412d95175c2b40bd9a27f7d1fa096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_03.png using Guid(0c6412d95175c2b40bd9a27f7d1fa096) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1ca0f4b37e50f35bde4fabb28e8b5eaa') in 0.0142228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_r_01.png
+  artifactKey: Guid(7b78357522a34d64bb8775b962b0deb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_r_01.png using Guid(7b78357522a34d64bb8775b962b0deb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8b57a5c43729efc5ca8edeb56da971dc') in 0.0100987 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_head_01.png
+  artifactKey: Guid(e17e5dd745f21b043bd6d387e5c5a19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_head_01.png using Guid(e17e5dd745f21b043bd6d387e5c5a19b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8993236f573beee3e5eb28f6265515c3') in 0.0125071 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_01.png
+  artifactKey: Guid(48ecbe245379f214497aae538fe1d4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_01.png using Guid(48ecbe245379f214497aae538fe1d4f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '37c1de2f5adf90eaf536ff6018dc9c17') in 0.0113667 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_wrist_r_05.png
+  artifactKey: Guid(c764210032bc5df46a28cb6e1f3ad991) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_wrist_r_05.png using Guid(c764210032bc5df46a28cb6e1f3ad991) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e79eb65157d9fbbbcd272a4fe9c702b6') in 0.010359 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_01.png
+  artifactKey: Guid(c376d5b80d02ffe4ba89fd03d60ec471) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_pelvis_01.png using Guid(c376d5b80d02ffe4ba89fd03d60ec471) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4a5ae6a124900b1b565f0f118ee8ea0b') in 0.0112657 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_l_01.png
+  artifactKey: Guid(40e550cd3b539f14eb98d42b6769b592) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_leg_l_01.png using Guid(40e550cd3b539f14eb98d42b6769b592) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'de92d1c9836f158c56797e64f3fb3023') in 0.0114352 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_01.png
+  artifactKey: Guid(518ab34707033904cb1d99dbfcc9f4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_01.png using Guid(518ab34707033904cb1d99dbfcc9f4bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7975c7bb1651be7fe04d098f151d06c3') in 0.0107295 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_02.png
+  artifactKey: Guid(57e9977661e6a7246b75c2de487e5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_l_02.png using Guid(57e9977661e6a7246b75c2de487e5bb3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c4dded7405d8b1538229ac3362b1d231') in 0.0150429 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hood_03.png
+  artifactKey: Guid(ae2d3e3bacfacde4981510b116293dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_hood_03.png using Guid(ae2d3e3bacfacde4981510b116293dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7925bf9bb5420a00228e81ecd5a2a874') in 0.013062 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_05.png
+  artifactKey: Guid(debc4edcc117abe4f8600caca642318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_05.png using Guid(debc4edcc117abe4f8600caca642318f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00c0ac5a8d57a4c1ebe73640e3413e91') in 0.0065227 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_03.png
+  artifactKey: Guid(d4a68b40fbf8e4046a2350c31a210fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_boot_r_03.png using Guid(d4a68b40fbf8e4046a2350c31a210fb1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'db4b4eeb55be76f704f9161e45146df3') in 0.0104176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000010 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_05.png
+  artifactKey: Guid(82356071de2f4a942b6c0eb7db5dbc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_elbow_l_05.png using Guid(82356071de2f4a942b6c0eb7db5dbc94) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e1d9ba7db5da0245aa0a8a1e7d946c44') in 0.0134176 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_02.png
+  artifactKey: Guid(90458a12b047bb84ba77cb7ea81ba457) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_02.png using Guid(90458a12b047bb84ba77cb7ea81ba457) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '29d32a90033325f79bdcef63cfaea0a9') in 0.0129604 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_06.png
+  artifactKey: Guid(b2bfd98da49248e42b93a78607ac257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_shoulder_r_06.png using Guid(b2bfd98da49248e42b93a78607ac257a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f324bfe2fca8b92e17616a2d14916bdf') in 0.0124797 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_03.png
+  artifactKey: Guid(124013dbba7f284489ac16156c930131) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_torso_03.png using Guid(124013dbba7f284489ac16156c930131) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '12de7018458aafdedaa3b65376ab07b2') in 0.0121867 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_02.png
+  artifactKey: Guid(8e016bdb4d00e70429de56b91135940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_face_02.png using Guid(8e016bdb4d00e70429de56b91135940c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e571fe1dbf02cf91f55b9a2a3086ceac') in 0.0093264 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.845698 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_01.png
+  artifactKey: Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue/Rogue_01.png using Guid(5f184284ff230b44992dfd45d7153af4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cc28eaae51b676b711b91e6d4b51cce9') in 0.0170111 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.705853 seconds.
+  path: Assets/Circle.png
+  artifactKey: Guid(709b101624df5554c8a20f16fd2c5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Circle.png using Guid(709b101624df5554c8a20f16fd2c5be6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e98e7c4cebcd533a3c2949eb8a5bbdb6') in 0.0112447 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+
+========================================================================
+Received Import Request.
+  Time since last request: 110.434630 seconds.
+  path: Assets/DefaultVolumeProfile.asset
+  artifactKey: Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DefaultVolumeProfile.asset using Guid(3f9215ea0144899419cfbc0957140d3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1e3ee85287093c2e01e2184a29fd3edf') in 0.0008092 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000009 seconds.
+  path: Assets/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UniversalRenderPipelineGlobalSettings.asset using Guid(93b439a37f63240aca3dd4e01d978a9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '00c025d2039ced57596f58dea75cb28a') in 0.0007575 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.970657 seconds.
+  path: Packages/com.unity.2d.animation/package.json
+  artifactKey: Guid(9e83c20a8293f44ec8a375d3805f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.animation/package.json using Guid(9e83c20a8293f44ec8a375d3805f477d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8a66d5da76fe5498fe0e9e29f6af4c6c') in 0.0009173 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.682651 seconds.
+  path: Packages/com.unity.2d.aseprite/package.json
+  artifactKey: Guid(fcf2f4964f64c4a0fa8c994d677d8bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.aseprite/package.json using Guid(fcf2f4964f64c4a0fa8c994d677d8bd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcb0f58847b01000026b23d9fa573ed1') in 0.0007395 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.153046 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations
+  artifactKey: Guid(42f19c8eb0b867d4a93b67679d40b2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations using Guid(42f19c8eb0b867d4a93b67679d40b2c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ad3546ab3ce5f3542c4e86084f02fa6') in 0.0003741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.599530 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations
+  artifactKey: Guid(7f8b0492810aa164d970076ba09b37ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Animations/Rogue_animations using Guid(7f8b0492810aa164d970076ba09b37ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8d9a2126f200cadbbc06268822fe2483') in 0.0003792 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.212760 seconds.
+  path: Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue
+  artifactKey: Guid(2e0479cae0555d54d898046e31c3fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Mighty Heroes (Rogue) 2D Fantasy Characters Pack/Rogue using Guid(2e0479cae0555d54d898046e31c3fa76) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ad196fb1805ce216b8567696cc373dc9') in 0.000371 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.503 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.52 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.527 seconds
+Domain Reload Profiling: 1029ms
+	BeginReloadAssembly (150ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (10ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (298ms)
+		LoadAssemblies (228ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (133ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (118ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (527ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (403ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (82ms)
+			ProcessInitializeOnLoadAttributes (267ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 3.23 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6936 unused Assets / (4.4 MB). Loaded Objects now: 7647.
+Memory consumption went from 151.1 MB to 146.7 MB.
+Total: 10.707000 ms (FindLiveObjects: 1.080300 ms CreateObjectMapping: 0.845800 ms MarkObjects: 6.294100 ms  DeleteObjects: 2.486100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.497 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.536 seconds
+Domain Reload Profiling: 1032ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (12ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (36ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (593ms)
-		LoadAssemblies (408ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (300ms)
+		LoadAssemblies (233ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (283ms)
-			TypeCache.Refresh (198ms)
-				TypeCache.ScanAssembly (178ms)
-			BuildScriptInfoCaches (64ms)
-			ResolveRequiredComponents (17ms)
-	FinalizeReload (797ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (641ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (126ms)
-			ProcessInitializeOnLoadAttributes (382ms)
-			ProcessInitializeOnLoadMethodAttributes (119ms)
-			AfterProcessingInitializeOnLoad (7ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 2.45 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 206 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6572 unused Assets / (7.0 MB). Loaded Objects now: 7216.
-Memory consumption went from 174.2 MB to 167.2 MB.
-Total: 11.949500 ms (FindLiveObjects: 1.027300 ms CreateObjectMapping: 0.934000 ms MarkObjects: 6.006000 ms  DeleteObjects: 3.980700 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.792 seconds
-Refreshing native plugins compatible for Editor in 2.00 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.826 seconds
-Domain Reload Profiling: 1612ms
-	BeginReloadAssembly (230ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (37ms)
-	LoadAllAssembliesAndSetupDomain (472ms)
-		LoadAssemblies (396ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (185ms)
-			TypeCache.Refresh (9ms)
+		AnalyzeDomain (130ms)
+			TypeCache.Refresh (4ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (162ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (827ms)
+			BuildScriptInfoCaches (115ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (537ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (625ms)
+		SetupLoadedEditorAssemblies (406ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (3ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (144ms)
-			ProcessInitializeOnLoadAttributes (407ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (83ms)
+			ProcessInitializeOnLoadAttributes (270ms)
+			ProcessInitializeOnLoadMethodAttributes (43ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (12ms)
-Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 2.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.1 MB). Loaded Objects now: 7219.
-Memory consumption went from 150.9 MB to 143.8 MB.
-Total: 9.924300 ms (FindLiveObjects: 0.738200 ms CreateObjectMapping: 0.512500 ms MarkObjects: 5.029200 ms  DeleteObjects: 3.643500 ms)
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6936 unused Assets / (4.6 MB). Loaded Objects now: 7649.
+Memory consumption went from 151.1 MB to 146.4 MB.
+Total: 11.501900 ms (FindLiveObjects: 1.075200 ms CreateObjectMapping: 0.938900 ms MarkObjects: 6.374200 ms  DeleteObjects: 3.112700 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.793 seconds
-Refreshing native plugins compatible for Editor in 2.11 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.501 seconds
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+'Packages/com.unity.cinemachine/Editor/Obsolete/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+'Packages/com.unity.cinemachine/Editor/Editors/CinemachineVirtualCameraBaseEditor.cs' contains partial class of Unity.Object, exactly 1 of the partial classes needs to be in a file with the same filename. This is to know the one that can be referenced from ie. GameObjects
+Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
+Assembly reference Packages/com.unity.cinemachine/Editor/Samples/ExposeHDRPInternals/HDRP-Editor-ref.asmref has no target assembly definition
+[Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] Unable to send message (not connected to server process).
+[Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.863 seconds
-Domain Reload Profiling: 1654ms
-	BeginReloadAssembly (223ms)
+- Finished resetting the current domain, in  0.516 seconds
+Domain Reload Profiling: 1016ms
+	BeginReloadAssembly (140ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (16ms)
+		DisableScriptedObjects (9ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (63ms)
-	RebuildCommonClasses (37ms)
-	RebuildNativeTypeToScriptingClass (11ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (489ms)
-		LoadAssemblies (383ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (21ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (311ms)
+		LoadAssemblies (230ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (203ms)
-			TypeCache.Refresh (7ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (4ms)
 				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (181ms)
-			ResolveRequiredComponents (11ms)
-	FinalizeReload (864ms)
+			BuildScriptInfoCaches (127ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (517ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (658ms)
+		SetupLoadedEditorAssemblies (391ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (134ms)
-			ProcessInitializeOnLoadAttributes (419ms)
-			ProcessInitializeOnLoadMethodAttributes (86ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			InitializePlatformSupportModulesInManaged (2ms)
+			SetLoadedEditorAssemblies (2ms)
+			BeforeProcessingInitializeOnLoad (90ms)
+			ProcessInitializeOnLoadAttributes (251ms)
+			ProcessInitializeOnLoadMethodAttributes (41ms)
+			AfterProcessingInitializeOnLoad (4ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (19ms)
-Refreshing native plugins compatible for Editor in 2.62 ms, found 4 plugins.
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 2.66 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 40 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 6570 unused Assets / (7.9 MB). Loaded Objects now: 7221.
-Memory consumption went from 150.9 MB to 142.9 MB.
-Total: 17.944200 ms (FindLiveObjects: 0.998100 ms CreateObjectMapping: 1.092400 ms MarkObjects: 8.261200 ms  DeleteObjects: 7.590900 ms)
+Unloading 14 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 6936 unused Assets / (4.9 MB). Loaded Objects now: 7651.
+Memory consumption went from 151.1 MB to 146.2 MB.
+Total: 12.226000 ms (FindLiveObjects: 1.286600 ms CreateObjectMapping: 1.253700 ms MarkObjects: 6.232200 ms  DeleteObjects: 3.452800 ms)
 
 Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 704672.042118 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png
-  artifactKey: Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/9Sliced.png using Guid(8884154dfe85442a3a3578be807dbcdf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0e073d19cdad9a28f297845aa23efa76') in 0.197629 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png
-  artifactKey: Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/HexagonPointTop.png using Guid(5aa8b770bc43046bc8d993d0d5b7f4a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7080f1be4c0ac73b2df67ad6c28920b3') in 0.0316061 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000045 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png
-  artifactKey: Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png using Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7187e8efb0674d786d24526c619b39ac') in 0.0151361 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png
-  artifactKey: Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/IsometricDiamond.png using Guid(19fb86013d8c24d6cb8410c0aadf30fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ddf791974f0c72be919c42fcdc5cebf') in 0.0154043 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
