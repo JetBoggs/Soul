@@ -7,43 +7,35 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
-    void Start()
-{
-    rb = GetComponent<Rigidbody2D>();
-    rb.simulated = false; // Disable physics at the start
-    Invoke("EnablePhysics", 0.1f); // Enable after 0.1 sec
-}
+    [Header("Ground Check")]
+    public Transform groundCheck; // Drag the GroundCheck object here in the Inspector
+    public LayerMask groundLayer; // Assign the "Ground" layer in the Inspector
+    public float groundCheckRadius = 0.2f; // Adjust if needed
 
-void EnablePhysics()
-{
-    rb.simulated = true;
-}
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
+    private void Update()
+    {
+        Move();
+        Jump();
+    }
 
-    void Update()
+    private void Move()
     {
         float moveInput = Input.GetAxis("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+    }
+
+    private void Jump()
+    {
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = true;
-        }
-    }
-
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            isGrounded = false;
         }
     }
 }
