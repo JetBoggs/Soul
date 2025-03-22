@@ -2,71 +2,127 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float speed = 5f;
-    public float jumpForce = 7f;
-    private Rigidbody2D rb;
-    private Animator anim;
-    private SpriteRenderer spriteRenderer;
-    private bool isGrounded;
+    [Header("Movement Settings")]
+    public float moveSpeed = 5f;
+    public float jumpForce = 12f;
+    public bool isGrounded;
 
+    [Header("Components")]
+    private Rigidbody2D rb;
+    private Animator animator;
+    private SpriteRenderer spriteRenderer;
+
+    [Header("Ground Check")]
     public Transform groundCheck;
     public LayerMask groundLayer;
 
-    private bool isFacingRight = true; // Track the player's facing direction
+    [Header("Attack")]
+    public bool isAttacking = false;
+    public float attackDuration = 0.4f;
 
+    private bool isHurt = false;
+    private bool isCrouching = false;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
-        // Assign the SpriteRenderer that is part of your character
-        spriteRenderer = GetComponentInChildren<SpriteRenderer>();  // This grabs the SpriteRenderer from any child
-
-        if (spriteRenderer == null)
-        {
-            Debug.LogError("SpriteRenderer not found! Make sure your character has a SpriteRenderer.");
-        }
+        if (!rb) Debug.LogError("Rigidbody2D not found!");
+        if (!animator) Debug.LogError("Animator not found!");
+        if (!spriteRenderer) Debug.LogError("SpriteRenderer not found!");
+        if (!groundCheck) Debug.LogError("GroundCheck not assigned in Inspector!");
     }
 
     void Update()
     {
-        float moveInput = Input.GetAxisRaw("Horizontal");
+        if (isHurt) return; // Prevent movement while hurt
 
-        // Moving the player
-        rb.linearVelocity = new Vector2(moveInput * speed, rb.linearVelocity.y);
-
-        // Handle animations (running and idle)
-        anim.SetBool("isRunning", moveInput != 0);
-
-        // Flip the character (whole object) when changing direction
-        if (moveInput > 0 && !isFacingRight)
-        {
-            Flip(); // Flip the character to face right
-        }
-        else if (moveInput < 0 && isFacingRight)
-        {
-            Flip(); // Flip the character to face left
-        }
-
-        // Jumping
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            anim.SetTrigger("Jump");
-        }
+        HandleMovement();
+        HandleJump();
+        HandleAttack();
+        HandleCrouch();
+        UpdateAnimations();
     }
 
     void FixedUpdate()
     {
-        // Check if the player is grounded
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer);
-        anim.SetBool("isGrounded", isGrounded);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
-    // Function to flip the player character (whole object)
-    private void Flip()
+    void HandleMovement()
     {
-        isFacingRight = !isFacingRight;
-        transform.Rotate(0f, 180f, 0f); // Rotate the entire character to flip it
+        if (isAttacking || isCrouching) return; // Disable movement during attack/crouch
+
+        float moveInput = Input.GetAxisRaw("Horizontal");
+        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
+        // Flip character based on movement direction
+        if (moveInput > 0) spriteRenderer.flipX = false;
+        else if (moveInput < 0) spriteRenderer.flipX = true;
+
+        animator.SetBool("isRunning", moveInput != 0);
+    }
+
+    void HandleJump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            animator.SetBool("isJumping", true);
+        }
+    }
+
+    void HandleAttack()
+    {
+        if (Input.GetKeyDown(KeyCode.F) && !isAttacking)
+        {
+            isAttacking = true;
+            animator.SetBool("isAttacking", true);
+            Invoke(nameof(ResetAttack), attackDuration);
+        }
+    }
+
+    void ResetAttack()
+    {
+        isAttacking = false;
+        animator.SetBool("isAttacking", false);
+    }
+
+    void HandleCrouch()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            isCrouching = true;
+            animator.SetBool("isCrouching", true);
+        }
+        if (Input.GetKeyUp(KeyCode.S))
+        {
+            isCrouching = false;
+            animator.SetBool("isCrouching", false);
+        }
+    }
+
+    void UpdateAnimations()
+    {
+        if (animator == null) return;
+
+        animator.SetBool("isGrounded", isGrounded);
+        animator.SetBool("isJumping", !isGrounded && rb.linearVelocity.y > 0);
+        animator.SetBool("isHurt", isHurt);
+    }
+
+    public void TakeDamage()
+    {
+        isHurt = true;
+        animator.SetBool("isHurt", true);
+        Invoke(nameof(ResetHurt), 0.5f);
+    }
+
+    void ResetHurt()
+    {
+        isHurt = false;
+        animator.SetBool("isHurt", false);
     }
 }
