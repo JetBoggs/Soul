@@ -1,128 +1,168 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float moveSpeed = 5f;
-    public float jumpForce = 12f;
-    public bool isGrounded;
+    public float jumpForce = 10f;
+    public int maxJumps = 2;
 
-    [Header("Components")]
+    [Header("Ground Check Settings")]
+    public Transform groundCheck;
+    public float groundCheckRadius = 0.2f;
+    public LayerMask physicalPlaneMask;
+    public LayerMask spiritPlaneMask;
+    public LayerMask boundaryMask; // Ground always visible
+
+    [Header("Plane Switching")]
+    private bool inPhysicalPlane = true;
+
+    // Components
     private Rigidbody2D rb;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+    private Camera mainCamera;
 
-    [Header("Ground Check")]
-    public Transform groundCheck;
-    public LayerMask groundLayer;
+    // State
+    private bool isGrounded;
+    private int jumpsRemaining;
+    private bool isAttacking;
+    private bool isCrouching;
 
-    [Header("Attack")]
-    public bool isAttacking = false;
-    public float attackDuration = 0.4f;
-
-    private bool isHurt = false;
-    private bool isCrouching = false;
-    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        mainCamera = Camera.main;
 
-        if (!rb) Debug.LogError("Rigidbody2D not found!");
-        if (!animator) Debug.LogError("Animator not found!");
-        if (!spriteRenderer) Debug.LogError("SpriteRenderer not found!");
-        if (!groundCheck) Debug.LogError("GroundCheck not assigned in Inspector!");
+        jumpsRemaining = maxJumps;
+        UpdatePlane(); // Set initial plane visibility
     }
 
     void Update()
     {
-        if (isHurt) return; // Prevent movement while hurt
-
         HandleMovement();
         HandleJump();
         HandleAttack();
         HandleCrouch();
+        HandlePlaneSwitching();
         UpdateAnimations();
     }
 
     void FixedUpdate()
     {
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
+        // Always include boundary objects for ground check
+        LayerMask currentGroundMask = (inPhysicalPlane ? physicalPlaneMask : spiritPlaneMask) | boundaryMask;
+
+        bool wasGrounded = isGrounded;
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, currentGroundMask);
+
+        if (isGrounded && !wasGrounded)
+        {
+            jumpsRemaining = maxJumps;
+        }
     }
 
     void HandleMovement()
     {
-        if (isAttacking || isCrouching) return; // Disable movement during attack/crouch
+        if (isAttacking || isCrouching) return;
 
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
 
-        // Flip character based on movement direction
-        if (moveInput > 0) spriteRenderer.flipX = false;
-        else if (moveInput < 0) spriteRenderer.flipX = true;
-
-        animator.SetBool("isRunning", moveInput != 0);
+        if (moveInput != 0)
+            spriteRenderer.flipX = moveInput < 0;
     }
 
     void HandleJump()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (isAttacking || isCrouching) return;
+
+        if (Input.GetButtonDown("Jump") && jumpsRemaining > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            animator.SetBool("isJumping", true);
+            jumpsRemaining--;
+            animator.SetTrigger("Jump");
         }
-    }
-
-    void HandleAttack()
-    {
-        if (Input.GetKeyDown(KeyCode.F) && !isAttacking)
-        {
-            isAttacking = true;
-            animator.SetBool("isAttacking", true);
-            Invoke(nameof(ResetAttack), attackDuration);
-        }
-    }
-
-    void ResetAttack()
-    {
-        isAttacking = false;
-        animator.SetBool("isAttacking", false);
     }
 
     void HandleCrouch()
     {
-        if (Input.GetKeyDown(KeyCode.S))
+        if (isAttacking) return;
+
+        isCrouching = Input.GetKey(KeyCode.LeftControl);
+
+        if (isCrouching)
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Stop horizontal movement
+
+        animator.SetBool("isCrouching", isCrouching);
+    }
+
+    void HandleAttack()
+    {
+        if (isAttacking) return;
+
+        if (Input.GetMouseButtonDown(0)) // Left click only
+            StartCoroutine(AttackRoutine());
+    }
+
+    IEnumerator AttackRoutine()
+    {
+        isAttacking = true;
+        animator.SetBool("isAttacking", true);
+        yield return new WaitForSeconds(0.5f); // Adjust based on attack animation
+        isAttacking = false;
+        animator.SetBool("isAttacking", false);
+    }
+
+    void HandlePlaneSwitching()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            isCrouching = true;
-            animator.SetBool("isCrouching", true);
+            inPhysicalPlane = !inPhysicalPlane;
+            UpdatePlane();
         }
-        if (Input.GetKeyUp(KeyCode.S))
+    }
+
+    void UpdatePlane()
+    {
+        int physicalLayer = LayerMask.NameToLayer("PhysicalPlane");
+        int spiritLayer = LayerMask.NameToLayer("SpiritPlane");
+
+        // Safely toggle plane visibility without touching other layers
+        if (mainCamera)
         {
-            isCrouching = false;
-            animator.SetBool("isCrouching", false);
+            // Turn on current plane
+            mainCamera.cullingMask |= (1 << (inPhysicalPlane ? physicalLayer : spiritLayer));
+
+            // Turn off the other plane
+            mainCamera.cullingMask &= ~(1 << (inPhysicalPlane ? spiritLayer : physicalLayer));
+        }
+
+        TogglePlaneColliders("PhysicalPlane", inPhysicalPlane);
+        TogglePlaneColliders("SpiritPlane", !inPhysicalPlane);
+    }
+
+    void TogglePlaneColliders(string layerName, bool active)
+    {
+        GameObject[] objs = FindObjectsByType<GameObject>(FindObjectsSortMode.None);
+        foreach (GameObject obj in objs)
+        {
+            if (obj.layer == LayerMask.NameToLayer(layerName))
+            {
+                Collider2D col = obj.GetComponent<Collider2D>();
+                if (col != null) col.enabled = active;
+            }
         }
     }
 
     void UpdateAnimations()
     {
-        if (animator == null) return;
-
-        animator.SetBool("isGrounded", isGrounded);
-        animator.SetBool("isJumping", !isGrounded && rb.linearVelocity.y > 0);
-        animator.SetBool("isHurt", isHurt);
-    }
-
-    public void TakeDamage()
-    {
-        isHurt = true;
-        animator.SetBool("isHurt", true);
-        Invoke(nameof(ResetHurt), 0.5f);
-    }
-
-    void ResetHurt()
-    {
-        isHurt = false;
-        animator.SetBool("isHurt", false);
+        animator.SetBool("isRunning", Mathf.Abs(rb.linearVelocity.x) > 0.1f && isGrounded && !isAttacking && !isCrouching);
+        animator.SetBool("isCrouching", isCrouching);
+        animator.SetBool("isAttacking", isAttacking);
+        animator.SetBool("isJumping", !isGrounded);
     }
 }
