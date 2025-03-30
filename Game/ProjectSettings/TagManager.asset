@@ -42,11 +42,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
+  - name: Background
     uniqueID: 728533249
     locked: 0
-  - name: New Layer 2
+  - name: ParallaxFar
     uniqueID: 4156998407
+    locked: 0
+  - name: ParallaxNear
+    uniqueID: 1968853297
+    locked: 0
+  - name: Midground
+    uniqueID: 3436052781
+    locked: 0
+  - name: Foreground
+    uniqueID: 306432679
+    locked: 0
+  - name: Player
+    uniqueID: 1722274265
     locked: 0
   m_RenderingLayers:
   - Default
