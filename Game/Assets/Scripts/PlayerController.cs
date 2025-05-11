@@ -13,10 +13,13 @@ public class PlayerController : MonoBehaviour
     public float groundCheckRadius = 0.2f;
     public LayerMask physicalPlaneMask;
     public LayerMask spiritPlaneMask;
-    public LayerMask boundaryMask; // Ground always visible
+    public LayerMask boundaryMask;
 
     [Header("Plane Switching")]
     private bool inPhysicalPlane = true;
+
+    [Header("Combat")]
+    public GameObject swordHitbox;
 
     // Components
     private Rigidbody2D rb;
@@ -37,8 +40,11 @@ public class PlayerController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         mainCamera = Camera.main;
 
+        if (swordHitbox != null)
+            swordHitbox.SetActive(false);
+
         jumpsRemaining = maxJumps;
-        UpdatePlane(); // Set initial plane visibility
+        UpdatePlane();
     }
 
     void Update()
@@ -53,7 +59,6 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Always include boundary objects for ground check
         LayerMask currentGroundMask = (inPhysicalPlane ? physicalPlaneMask : spiritPlaneMask) | boundaryMask;
 
         bool wasGrounded = isGrounded;
@@ -95,7 +100,7 @@ public class PlayerController : MonoBehaviour
         isCrouching = Input.GetKey(KeyCode.LeftControl);
 
         if (isCrouching)
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // Stop horizontal movement
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
 
         animator.SetBool("isCrouching", isCrouching);
     }
@@ -104,7 +109,7 @@ public class PlayerController : MonoBehaviour
     {
         if (isAttacking) return;
 
-        if (Input.GetMouseButtonDown(0)) // Left click only
+        if (Input.GetMouseButtonDown(0)) // Left click
             StartCoroutine(AttackRoutine());
     }
 
@@ -112,7 +117,15 @@ public class PlayerController : MonoBehaviour
     {
         isAttacking = true;
         animator.SetBool("isAttacking", true);
-        yield return new WaitForSeconds(0.5f); // Adjust based on attack animation
+
+        if (swordHitbox != null)
+            swordHitbox.SetActive(true); // Enable sword hitbox
+
+        yield return new WaitForSeconds(0.5f); // Match animation timing
+
+        if (swordHitbox != null)
+            swordHitbox.SetActive(false); // Disable sword hitbox
+
         isAttacking = false;
         animator.SetBool("isAttacking", false);
     }
@@ -131,13 +144,9 @@ public class PlayerController : MonoBehaviour
         int physicalLayer = LayerMask.NameToLayer("PhysicalPlane");
         int spiritLayer = LayerMask.NameToLayer("SpiritPlane");
 
-        // Safely toggle plane visibility without touching other layers
         if (mainCamera)
         {
-            // Turn on current plane
             mainCamera.cullingMask |= (1 << (inPhysicalPlane ? physicalLayer : spiritLayer));
-
-            // Turn off the other plane
             mainCamera.cullingMask &= ~(1 << (inPhysicalPlane ? spiritLayer : physicalLayer));
         }
 
@@ -164,5 +173,10 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isCrouching", isCrouching);
         animator.SetBool("isAttacking", isAttacking);
         animator.SetBool("isJumping", !isGrounded);
+    }
+
+    public bool IsAttacking()
+    {
+        return animator.GetBool("isAttacking");
     }
 }

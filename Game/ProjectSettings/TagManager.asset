@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 3
   tags:
   - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -16,7 +17,7 @@ TagManager:
   - SpiritPlane
   - Player
   - 'Boundary '
-  - 
+  - Enemy
   - 
   - 
   - 
@@ -59,6 +60,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 1722274265
+    locked: 0
+  - name: Enemy
+    uniqueID: 262998511
     locked: 0
   m_RenderingLayers:
   - Default
