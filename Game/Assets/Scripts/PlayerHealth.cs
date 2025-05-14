@@ -20,23 +20,24 @@ public class PlayerHealth : MonoBehaviour
         if (isInvulnerable) return;
 
         currentHealth -= amount;
-        Debug.Log("Player HP: " + currentHealth);
+        Debug.Log("Player took damage. HP: " + currentHealth);
 
-        if (animator) animator.SetTrigger("isHurt");
+        animator.SetTrigger("Hurt");
 
         if (currentHealth <= 0)
         {
             Debug.Log("Player died!");
-            Destroy(gameObject); // or your death logic
+            // death logic here
+            Destroy(gameObject);
         }
 
-        StartCoroutine(InvulnerabilityFrames());
+        StartCoroutine(TemporaryInvulnerability());
     }
 
-    IEnumerator InvulnerabilityFrames()
+    IEnumerator TemporaryInvulnerability()
     {
         isInvulnerable = true;
-        yield return new WaitForSeconds(1f); // 1 second of invincibility
+        yield return new WaitForSeconds(1f);
         isInvulnerable = false;
     }
 }
