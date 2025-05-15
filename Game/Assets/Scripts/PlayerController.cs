@@ -8,7 +8,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce = 10f;
     public int maxJumps = 2;
 
-    [Header("Ground Check Settings")]
+    [Header("Ground Check")]
     public Transform groundCheck;
     public float groundCheckRadius = 0.2f;
     public LayerMask physicalPlaneMask;
@@ -21,24 +21,34 @@ public class PlayerController : MonoBehaviour
     [Header("Combat")]
     public GameObject swordHitbox;
 
-    [Header("Health")]
+    [Header("Health & Respawn")]
     public int maxHealth = 5;
     public float hurtCooldown = 1f;
-
-    [Header("Respawn")]
     public Transform spawnPoint;
 
-    private int currentHealth;
-    private bool isHurt = false;
-    private bool isAttacking = false;
-    private bool isCrouching = false;
-    private bool isGrounded;
-    private int jumpsRemaining;
+    [Header("Audio")]
+    public AudioSource musicSource;
+    public AudioSource sfxSource;
+    public AudioClip musicTheme;
+    public AudioClip jumpClip;
+    public AudioClip walkClip;
+    public AudioClip hitClip;
+    public AudioClip hurtClip;
+    public AudioClip boomClip;
 
-    private Rigidbody2D rb;
-    private Animator animator;
-    private SpriteRenderer spriteRenderer;
-    private Camera mainCamera;
+    // State
+    int currentHealth;
+    int jumpsRemaining;
+    bool isGrounded;
+    bool isHurt;
+    bool isAttacking;
+    bool isCrouching;
+
+    // Components
+    Rigidbody2D rb;
+    Animator animator;
+    SpriteRenderer spriteRenderer;
+    Camera mainCamera;
 
     void Start()
     {
@@ -53,6 +63,13 @@ public class PlayerController : MonoBehaviour
 
         if (swordHitbox != null)
             swordHitbox.SetActive(false);
+
+        if (musicSource && musicTheme)
+        {
+            musicSource.clip = musicTheme;
+            musicSource.loop = true;
+            musicSource.Play();
+        }
     }
 
     void Update()
@@ -68,9 +85,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        LayerMask currentGroundMask = (inPhysicalPlane ? physicalPlaneMask : spiritPlaneMask) | boundaryMask;
+        LayerMask groundMask = (inPhysicalPlane ? physicalPlaneMask : spiritPlaneMask) | boundaryMask;
         bool wasGrounded = isGrounded;
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, currentGroundMask);
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundMask);
         if (isGrounded && !wasGrounded)
             jumpsRemaining = maxJumps;
     }
@@ -78,35 +95,47 @@ public class PlayerController : MonoBehaviour
     void HandleMovement()
     {
         if (isAttacking || isCrouching) return;
+
         float moveInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+
         if (moveInput != 0)
+        {
             spriteRenderer.flipX = moveInput < 0;
+            if (walkClip && !sfxSource.isPlaying)
+                sfxSource.PlayOneShot(walkClip);
+        }
     }
 
     void HandleJump()
     {
         if (isAttacking || isCrouching) return;
+
         if (Input.GetButtonDown("Jump") && jumpsRemaining > 0)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jumpsRemaining--;
             animator.SetTrigger("Jump");
+            if (jumpClip)
+                sfxSource.PlayOneShot(jumpClip);
         }
     }
 
     void HandleCrouch()
     {
         if (isAttacking) return;
+
         isCrouching = Input.GetKey(KeyCode.LeftControl);
         if (isCrouching)
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
         animator.SetBool("isCrouching", isCrouching);
     }
 
     void HandleAttack()
     {
         if (isAttacking) return;
+
         if (Input.GetMouseButtonDown(0))
             StartCoroutine(AttackRoutine());
     }
@@ -115,7 +144,12 @@ public class PlayerController : MonoBehaviour
     {
         isAttacking = true;
         animator.SetBool("isAttacking", true);
-        yield return new WaitForSeconds(0.5f); // match animation
+
+        if (hitClip)
+            sfxSource.PlayOneShot(hitClip);
+
+        yield return new WaitForSeconds(0.5f);
+
         isAttacking = false;
         animator.SetBool("isAttacking", false);
     }
@@ -126,8 +160,7 @@ public class PlayerController : MonoBehaviour
         {
             swordHitbox.SetActive(true);
             var hitScript = swordHitbox.GetComponent<SwordHitbox>();
-            if (hitScript != null)
-                hitScript.canHit = true;
+            if (hitScript != null) hitScript.canHit = true;
         }
     }
 
@@ -136,8 +169,7 @@ public class PlayerController : MonoBehaviour
         if (swordHitbox != null)
         {
             var hitScript = swordHitbox.GetComponent<SwordHitbox>();
-            if (hitScript != null)
-                hitScript.canHit = false;
+            if (hitScript != null) hitScript.canHit = false;
             swordHitbox.SetActive(false);
         }
     }
@@ -145,6 +177,7 @@ public class PlayerController : MonoBehaviour
     void FlipSwordHitbox()
     {
         if (swordHitbox == null) return;
+
         float direction = spriteRenderer.flipX ? -1f : 1f;
         Vector3 pos = swordHitbox.transform.localPosition;
         pos.x = Mathf.Abs(pos.x) * direction;
@@ -204,11 +237,11 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damage)
     {
         if (isHurt) return;
-        currentHealth -= damage;
 
+        currentHealth -= damage;
         if (currentHealth <= 0)
         {
-            Respawn();
+            StartCoroutine(DieAndRespawn());
             return;
         }
 
@@ -219,20 +252,38 @@ public class PlayerController : MonoBehaviour
     {
         isHurt = true;
         animator.SetTrigger("Hurt");
+        if (hurtClip)
+            sfxSource.PlayOneShot(hurtClip);
+
         yield return new WaitForSeconds(hurtCooldown);
         isHurt = false;
     }
 
-    void Respawn()
+    IEnumerator DieAndRespawn()
     {
-        currentHealth = maxHealth;
-        transform.position = spawnPoint.position;
+        animator.SetTrigger("Hurt");
+        if (boomClip)
+            sfxSource.PlayOneShot(boomClip);
+
         rb.linearVelocity = Vector2.zero;
+        rb.isKinematic = true;
+        GetComponent<Collider2D>().enabled = false;
+
+        yield return new WaitForSeconds(1f);
+
+        transform.position = spawnPoint.position;
+        currentHealth = maxHealth;
+        rb.isKinematic = false;
+        GetComponent<Collider2D>().enabled = true;
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Hazard") || other.CompareTag("Enemy"))
+        if (other.CompareTag("Hazard"))
+        {
+            StartCoroutine(DieAndRespawn());
+        }
+        else if (other.CompareTag("Enemy"))
         {
             TakeDamage(1);
         }
